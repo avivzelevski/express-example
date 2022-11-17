@@ -13,11 +13,11 @@ pipeline {
         stage('Build') { 
             steps { 
                  sh 'echo Build'
-		 sh 'sudo install npm -y'
+		 sh 'install npm -y'
 		 sh 'npm init -y'
 		 sh 'npm install express@4.17.1'
          sh 'node server.js'
-         
+
             }
         }
         stage('Test'){
